@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBlaster Flask Service</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>SocialBlaster Flask Service</h1>
+        <p>This is the Python Flask backend service for SocialBlaster.</p>
+        <div class="features">
+            <h3>Available Features:</h3>
+            <ul>
+                <li>Flask API endpoints</li>
+                <li>Template rendering</li>
+                <li>Static file serving</li>
+                <li>Health monitoring</li>
+            </ul>
+        </div>
+        <div class="api-endpoints">
+            <h3>API Endpoints:</h3>
+            <ul>
+                <li><code>GET /api/health</code> - Service health check</li>
+                <li><code>GET /api/python-status</code> - Python service status</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
