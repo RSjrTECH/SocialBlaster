@@ -1,0 +1,13 @@
+# Alternative Procfile options for different deployment scenarios
+
+# Option 1: Using python -m gunicorn (recommended)
+web: python -m gunicorn app:app --bind 0.0.0.0:$PORT
+
+# Option 2: Using direct gunicorn command
+# web: gunicorn app:app --bind 0.0.0.0:$PORT
+
+# Option 3: Using Flask development server (fallback)
+# web: python run.py
+
+# Option 4: Using wsgi.py entry point
+# web: python -m gunicorn wsgi:app --bind 0.0.0.0:$PORT
